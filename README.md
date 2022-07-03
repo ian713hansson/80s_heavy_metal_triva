@@ -13,5 +13,5 @@ JAVASCRIPT
 [Trello](https://trello.com/b/IfGa98ek/80s-metal-trivia)
 
 
-[Image](https://imgur.com/FFBms5g)
-### created with Gimp 2.0
+[Image created with Gimp 2.0](https://imgur.com/FFBms5g)
+ 
