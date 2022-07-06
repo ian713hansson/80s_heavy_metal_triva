@@ -1,0 +1,47 @@
+* {
+    font-family: 'New Rocker', cursive;
+    background-color: rgb(29, 26,26);
+}
+
+body {
+    color:brown;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+    margin-top: -20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 75px;
+    margin-top: -40px;
+}
+
+.container {
+    width: auto;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-align: center;
+    color:rgb(17, 67, 230);
+    margin: 15px 0 15px 0;
+    font-size: 50px;
+}

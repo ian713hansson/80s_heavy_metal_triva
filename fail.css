@@ -1,0 +1,53 @@
+:root {
+    background-color: rgb(245, 15, 187);
+}
+
+* {
+    font-size: 60px;
+    font-family: 'Butterfly Kids', cursive;
+}
+
+body {
+    color:rgb(90, 233, 29);
+}
+
+end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+}
+
+h2{
+    text-align: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-align: center;
+    color:rgb(17, 67, 230);
+    margin: 15px 0 15px 0;
+}
