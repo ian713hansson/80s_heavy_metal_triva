@@ -1,23 +1,26 @@
 :root {
-    background-color: rgb(29, 26,26);
+    background-color: rgb(29, 26,26)
 }
 
-*{
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 100px;
     font-family: 'New Rocker', cursive;
+    background-image: url("https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2430,w_2000,x_0,y_188/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/Oct_19_-_Arts_-_Heavy_Metal_Battle_Jackets_yuhhdo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 h1{
     text-align: center;
     font-size: 150px;
-    color:aliceblue;
+    background: #6140CF;
+    background: linear-gradient(to top, #e4d125 0%, #ed3333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
-}
-h2 {
-    font-size: 60px;
-    margin-bottom: 4rem;
+    filter: drop-shadow(2px 2px black);
 }
 
 .container {
@@ -57,6 +60,7 @@ h2 {
     background:rgb(111, 235, 9);
     font-size: 60px;
     color:brown;
+    text-shadow: 2px 2px black;
     border-radius: 4px;
     padding: 20px;
     text-align: center;
@@ -71,4 +75,30 @@ h2 {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 100px;
+    }
+    .btn {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 75px;
+    }
+    .btn {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 50px;
+    }
+    .btn {
+        font-size: 20px;
+    }
 }

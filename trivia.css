@@ -8,21 +8,34 @@
 }
 
 body {
-    color:brown;
+    color:rgb(174, 97, 97);
+    background-image: url(https://i.ytimg.com/vi/gm091w0sSKk/maxresdefault.jpg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-shadow: 2px 2px black;
+    
 }
 
+.questions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .choice-container {
     display: flex;
     margin-bottom: 15px;
     margin-top: 15px;
-    width: 100%;
+    width: 45%;
     border-radius: 10px;
     background-color: rgb(37, 64, 160);
     font-size: 75px;   
 }
 
 .choice-container:hover {
-    cursor: pointer;
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec61.png), auto !important;
     box-shadow: 4px 4px 4px 4px rgb(37, 64, 160);
     transform: scale(1.02);
     transform: transform 100ms;
@@ -34,6 +47,7 @@ body {
 }
 
 .choice-text {
+    margin-left: 25px;
     padding: 5px;
     width: 100%;
 }
@@ -58,12 +72,14 @@ body {
 
 .hud-main-text {
     text-align: center;
+    font-size: 125px;
+    color:rgb(60, 80, 180);
 }
 
 #progressBar {
     width: 420px;
     height: 75px;
-    border: 2px solid rgb(10, 241, 245);
+    border: 2px solid rgb(60, 80, 180);
     margin-top: 4px;
     border-radius: 20px;
     overflow: hidden;
@@ -71,6 +87,53 @@ body {
 
 #progressBarFull {
     height: 100%;
-    background:rgb(10, 241, 245);
+    background: rgb(60, 80, 180);
     width: 0%;
-}  
+}
+
+@media screen and (max-width: 800px) {
+    *{
+        font-size: 45px;
+    }
+    .hud-prefix {
+        font-size: 75px;
+    }
+    .hud-main-text {
+        font-size: 90px;
+    }
+    #progressBar {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    *{
+        font-size: 25px;
+    }
+    .hud-prefix {
+        font-size: 40px;
+    }
+    .hud-main-text {
+        font-size: 45px;
+    }
+    #progressBar {
+        width: 100px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 450px) {
+    *{
+        font-size: 20px;
+    }
+    .hud-prefix {
+        font-size: 30px;
+    }
+    .hud-main-text {
+        font-size: 35px;
+    }
+    #progressBar {
+        width: 75px;
+        height: 20px;
+    }
+}

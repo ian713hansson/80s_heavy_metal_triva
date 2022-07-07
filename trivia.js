@@ -3,6 +3,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'))
 const progressText = document.querySelector('#progressText')
 const scoreText = document.querySelector('#score')
 const progressBarFull = document.querySelector('#progressBarFull')
+const wrongAnswer = new Audio('./audio/Morbid.mp3')
+const correctAnswer = new Audio('./audio/Master.mp3')
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -140,6 +142,10 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
+            correctAnswer.play()
+        }
+        else{
+            wrongAnswer.play()
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
