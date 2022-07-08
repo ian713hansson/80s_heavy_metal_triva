@@ -53,6 +53,14 @@ h2{
     color:rgb(17, 67, 230);
     margin: 15px 0 15px 0;
 }
+audio::-webkit-media-controls-panel{
+    background-color: rgb(90, 233, 29);
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: rgb(245, 15, 187);
+    border-radius: 30%;
+}
 
 @media screen and (max-width: 800px) {
     h1 {

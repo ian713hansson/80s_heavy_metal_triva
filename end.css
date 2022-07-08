@@ -47,6 +47,15 @@ h2{
     font-size: 50px;
 }
 
+audio::-webkit-media-controls-panel{
+    background-color: rgb(133, 115, 115);
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: brown;
+    border-radius: 30%;
+}
+
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 100px;
@@ -69,11 +78,18 @@ h2{
 }
 
 @media screen and (max-width: 400px) {
+    body {
+        margin: 50px 25px 0 25px;
+        }
+  
     h1{
+        margin: 0 25px 0 25px;
         font-size: 30px;
     }
     h2{
+        margin: 10px 20px 0 20px;
         font-size: 20px;
+
     }
     .btn{
         font-size: 20px;
